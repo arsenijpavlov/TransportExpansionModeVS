@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "transportexpansion",
+  "name": "transportexpansion",
+  "authors": ["Riddick"],
+  "description": "To be added",
+  "version": "0.0.1",
+  "dependencies": {
+    "game": "1.17.3"
+  }
+}
