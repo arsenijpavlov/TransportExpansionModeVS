@@ -63,11 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\transportexpansion\textures\entity\cart.png" />
     <Content Include="modinfo.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
+    <Folder Include="assets\transportexpansion\entities\land\" />
+    <Folder Include="assets\transportexpansion\itemtypes\" />
     <Folder Include="src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\transportexpansion\shapes\entity\land\cart.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
