@@ -1,0 +1,55 @@
+﻿{
+	code: "cart",
+	class: "EntityAgent",
+	fallDamage: false,
+	hitboxSize: { x: 0.65, y: 0.6 },
+	deadHitboxSize: { x: 0.65, y: 0.5 },
+	eyeHeight: 1,
+	attributes: {
+		spawnDamageParticles: true,
+		isMechanical: true
+	},
+	client: {
+		renderer: "Shape",
+		shape: { base: "entity/land/cart" },
+		size: 1,
+		textures: {
+			"base": { base: "entity/cart" }
+		},
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "floatupwhenstuck", onlyWhenDead: false },
+			{ code: "interpolateposition" },
+			{ code: "commandable" }
+		],
+		animations: [
+			{
+				code: "move",
+				animation: "move",
+				animationSpeed: 1,
+				weight: 5,
+				blendMode: "AddAverage"
+			}
+		]
+	},
+	server: {
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "health", 
+				currenthealth: 100,
+				maxhealth: 100
+			},
+			{ code: "deaddecay", hoursToDecay: 24 },
+			{ code: "floatupwhenstuck", onlyWhenDead: false },
+			{ code: "commandable" },
+			{
+				code: "taskai",
+				aitasks: [
+					
+				]
+			}
+		]
+	},
+	sounds: {
+	},
+}

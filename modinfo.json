@@ -3,7 +3,7 @@
   "modid": "transportexpansion",
   "name": "transportexpansion",
   "authors": ["Riddick"],
-  "description": "To be added",
+  "description": "An attempt to add transport to this masterpiece",
   "version": "0.0.1",
   "dependencies": {
     "game": "1.17.3"

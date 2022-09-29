@@ -66,13 +66,16 @@
     <Content Include="assets\transportexpansion\textures\entity\cart.png" />
     <Content Include="modinfo.json" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="assets\transportexpansion\entities\land\" />
-    <Folder Include="assets\transportexpansion\itemtypes\" />
-    <Folder Include="src\" />
+    <None Include="assets\transportexpansion\entities\land\cart.json" />
+    <None Include="assets\transportexpansion\itemtypes\cart.json" />
+    <None Include="assets\transportexpansion\shapes\entity\land\cart.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\transportexpansion\shapes\entity\land\cart.json" />
+    <Compile Include="src\CartEntity.cs" />
+    <Compile Include="src\Main.cs" />
+    <Compile Include="src\TransportEntity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
