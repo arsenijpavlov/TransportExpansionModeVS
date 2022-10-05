@@ -8,7 +8,7 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.GameContent;
 
-namespace transportexpansion
+namespace transportexpansion.src
 {
     class Main : ModSystem
     {
@@ -21,19 +21,7 @@ namespace transportexpansion
         {
             base.Start(api);
 
-            api.RegisterEntity("EntityAnimalBot", typeof(EntityAnimalBot));
-        }
-    }
-
-    class FollowingBehaviour : EntityBehavior
-    {
-        public FollowingBehaviour(Entity entity) : base(entity)
-        {
-        }
-
-        public override string PropertyName()
-        {
-            throw new NotImplementedException();
+            api.RegisterEntity("CartEntity", typeof(CartEntity));
         }
     }
 }
