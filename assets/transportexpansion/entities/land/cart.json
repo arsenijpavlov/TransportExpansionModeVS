@@ -2,8 +2,8 @@
 	code: "cart",
 	class: "CartEntity",
 	fallDamage: false,
-	hitboxSize: { x: 0.65, y: 0.6 },
-	deadHitboxSize: { x: 0.65, y: 0.5 },
+	hitboxSize: { x: 2.65, y: 1.6 },
+	deadHitboxSize: { x: 2.65, y: 1.6 },
 	eyeHeight: 1,
 	attributes: {
 		spawnDamageParticles: true,

@@ -22,6 +22,7 @@ namespace transportexpansion.src
             base.Start(api);
 
             api.RegisterEntity("CartEntity", typeof(CartEntity));
+            //api.RegisterEntity("EntityAnimalBot", typeof(EntityAnimalBot));
         }
     }
 }

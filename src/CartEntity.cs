@@ -14,6 +14,7 @@ namespace transportexpansion.src
     {
         protected bool isDriven;
         protected EntityAgent driveEntity;
+        public PathTraverserBase pathTraverser;
 
         public CartEntity()
         {
@@ -45,10 +46,10 @@ namespace transportexpansion.src
         public override void OnGameTick(float dt)
         {
             base.OnGameTick(dt);
-            if(isDriven == true && driveEntity != null)
+            if(isDriven && driveEntity != null)
             {
-                this.Pos.SetPos(driveEntity.Pos.XYZ);
-                this.ServerPos = driveEntity.Pos;
+                //this.controls.WalkVector.Add(driveEntity.Pos.XYZ);
+                this.Controls.SetFrom(driveEntity.Controls);
             }
         }
 
